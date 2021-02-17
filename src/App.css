@@ -1,0 +1,108 @@
+.box{
+    width: 50%;
+    height: 50%;
+    padding: 1%;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    background: #34a1eb;
+    text-align: center;
+    vertical-align: middle;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px white,
+    0px 0px 20px white;
+}
+
+.content {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    color: white;
+    -moz-transform: translateX(-50%) translateY(-50%);
+    -webkit-transform: translateX(-50%) translateY(-50%);
+    transform: translateX(-50%) translateY(-50%);
+}
+
+.title {
+    position: absolute;
+    top: 15%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    font-size: 3em;
+    font-weight: bold;
+    color: rgb(68, 68, 68);
+    -webkit-text-stroke: 1px white;
+     text-shadow:
+       3px 3px 0 rgb(68, 68, 68),
+      -1px -1px 0 rgb(68, 68, 68),  
+       1px -1px 0 rgb(68, 68, 68),
+      -1px 1px 0 rgb(68, 68, 68),
+       1px 1px 0 rgb(68, 68, 68);
+}
+
+.btn-new {
+    position: absolute;
+    top: 85%;
+    left: 25%;
+    transform: translate(-50%,-50%);
+    background-color: rgb(68, 68, 68);
+    color: white;
+    border: 1px solid white;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    border-radius: 10px;
+}
+
+.btn-new:hover {
+    background-color: white;
+    color: rgb(68, 68, 68);
+    border: 1px solid  rgb(68, 68, 68); 
+}
+
+.btn-tweet {
+    position: absolute;
+    top: 85%;
+    left: 75%;
+    transform: translate(-50%,-50%);
+    background-color: white;
+    color: #34a1eb;
+    border: 1px solid rgb(68, 68, 68);
+    padding-left: 4vh;
+    padding-right: 4vh;
+    padding-top: 1vh;
+    padding-bottom: 1vh;
+    border-radius: 10px;
+}
+
+.btn-tweet:hover {
+    background-color: #34a1eb;
+    color: white;
+    border: 1px solid white;
+}
+
+@media only screen and (min-width: 375px) and (max-width: 812px) {
+    p {
+        font-size: 0.8em;
+    }
+    .title {
+        font-size: 2em;
+    }
+    .btn-new, .btn-tweet {
+        font-size: 0.8em;
+    }
+}
+
+@media only screen and (min-width: 0px) and (max-width: 374px) {
+    p {
+        font-size: 0.5em;
+    }
+    .title {
+        font-size: 1.5em;
+    }
+    .btn-new, .btn-tweet {
+        font-size: 0.5em;
+    }
+}
